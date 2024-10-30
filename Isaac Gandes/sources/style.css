@@ -43,7 +43,14 @@ main{
     align-items: center;
 }
 
-#bloco{
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#spaceblock{
     width: 80%;
     height: 45%;
     background-color: #20202071;
@@ -53,12 +60,12 @@ main{
     align-items: center;
 }
 
-#blocoPrinci{
+#blockmain{
     margin-left: 50px;
     margin-right: 50px;
 }
 
-#blocoLogo{
+#blockLogo{
     width: 90%;
     background-color: #fff;
     border-radius: 50px;
