@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(img/freepik__upload__49501.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,6 @@ body{
 
 header{
     height: 5vh;
-
 }
 
 #blocoHeader{
@@ -69,7 +68,7 @@ main{
 }
 
 footer{
-    height: 6vh;
+    height: 8vh;
 }
 
 #seta{
