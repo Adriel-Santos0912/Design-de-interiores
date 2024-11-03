@@ -5,6 +5,7 @@
 }
 
 body{
+    min-width: 770px;
     min-height: 100vh;
     background-image: url(img/freepik__upload__49501.jpeg);
     background-position: center;
@@ -19,8 +20,6 @@ header{
 #blocoHeader{
     height: 100%;
     padding-top: 1rem;
-    margin-left:10rem ;
-    margin-right:10rem ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,36 +34,34 @@ header{
 }
 
 main{
-    min-width: 1230px;
     height: 87vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#bloco{
+section{
+    display: grid;
+    flex-direction: column;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#spaceblock{
     width: 80%;
     height: 45%;
     background-color: #20202071;
     border-radius: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-#blocoPrinci{
+#blockmain{
     margin-left: 50px;
     margin-right: 50px;
 }
 
-#blocoLogo{
-    width: 90%;
-    background-color: #fff;
+#blockLogo{
     border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 footer{
