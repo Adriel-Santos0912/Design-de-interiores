@@ -11,20 +11,20 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="mb-2 mb-xl-0">
             <div id="blocoHeader">
-                <img id="logo" src="sources/img/logoHeader.png"s alt="Logotipo">
+                <img id="logo" src="sources/img/logoHeader.png" class="img-fluid" alt="Logotipo">
                 <a id="btnContact" href="#">Contato</a>
             </div>
         </header>
         <main class="row">
             
-            <div class="col-12 d-flex align-item-center justify-content-center">
+            <div class="col-12 mb-0 d-flex align-item-center justify-content-center">
                 <div id="spaceblock" class="d-flex flex-column flex-xl-row justify-content-xl-between">
                     <div id="blockmain">
                         <div>
                             <div id="blockLogo" class="bg-white d-flex align-item-center justify-content-center my-3">
-                                <img src="sources/img/logoGrande.png" alt="Gandes Design">
+                                <img src="sources/img/logoGrande.png" class="img-fluid" alt="Gandes Design">
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                     <div id="blockmain" class="d-flex align-items-center">
                         <div>
                             <div class="d-flex align-item-center justify-content-center">
-                                <img src="sources/img/SeuLarComecaAqui.png" alt="seu lar começa aqui">
+                                <img src="sources/img/SeuLarComecaAqui.png" class="img-fluid" alt="seu lar começa aqui">
                             </div>
                         </div>
                     </div>
@@ -51,31 +51,7 @@
 
         </footer>
     </div>
-    <script>
-                // Seleciona o elemento da seta
-        const seta = document.querySelector('.seta');
-
-        // Define variáveis para a posição e direção da seta
-        let posicao = 0;
-        let direcao = 1; // 1 para cima e -1 para baixo
-
-        // Função que atualiza a posição da seta
-        function animarSeta() {
-        // Altera a posição da seta
-        posicao += direcao * 1;
-
-        // Atualiza a posição da seta no eixo vertical
-        seta.style.top = posicao + 'px';
-
-        // Inverte a direção quando atinge o limite
-        if (posicao >= 10 || posicao <= 0) {
-            direcao *= -1;
-        }
-        }
-
-        // Inicia a animação chamando a função a cada 20ms
-        setInterval(animarSeta, 50);
-    </script>
+    <script src="sources/Script.js"></script>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

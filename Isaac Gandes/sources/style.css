@@ -34,7 +34,7 @@ header{
 }
 
 main{
-    height: 87vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@ section{
 }
 
 footer{
-    height: 8vh;
+    height: 10vh;
 }
 
 #seta{

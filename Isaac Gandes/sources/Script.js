@@ -14,10 +14,13 @@ posicao += direcao * 1;
 seta.style.top = posicao + 'px';
 
 // Inverte a direção quando atinge o limite
-if (posicao >= 10 || posicao <= 0) {
+if (posicao >= 3 || posicao <= -5) {
     direcao *= -1;
 }
 }
 
 // Inicia a animação chamando a função a cada 20ms
 setInterval(animarSeta, 50);
+
+const setaoff = document.getElementById('seta');
+
