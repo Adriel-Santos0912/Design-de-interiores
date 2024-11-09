@@ -20,8 +20,24 @@ main{
     height: 80%;
 }
 
-footer{
+@media only screen and (min-width: 1200px) {
+    main {
+      padding-top:5%;
+    }
+}
+
+.footer{
     height: 10%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .footer {
+      padding-top:5%;
+    }
+}
+
+.hidden{
+    opacity: 0%;
 }
 
 #spaceblock{
