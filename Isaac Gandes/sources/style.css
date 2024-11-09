@@ -5,8 +5,7 @@
 }
 
 body{
-    min-width: 770px;
-    min-height: 100vh;
+    min-height: 100%;
     background-image: url(img/freepik__upload__49501.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -14,43 +13,20 @@ body{
 }
 
 header{
-    height: 5vh;
-}
-
-#blocoHeader{
-    height: 100%;
-    padding-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-#blocoHeader a{
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-decoration: none;
+    height: 10%;
 }
 
 main{
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 80%;
 }
 
-section{
-    display: grid;
-    flex-direction: column;
-    place-items: center;
-    align-items: center;
-    min-height: 100vh;
+footer{
+    height: 10%;
 }
 
 #spaceblock{
     width: 80%;
-    height: 45%;
+    height: 100%;
     background-color: #20202071;
     border-radius: 50px;
 }
@@ -62,10 +38,6 @@ section{
 
 #blockLogo{
     border-radius: 50px;
-}
-
-footer{
-    height: 10vh;
 }
 
 #seta{
