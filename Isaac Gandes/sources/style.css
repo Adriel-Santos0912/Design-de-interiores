@@ -5,6 +5,7 @@
 }
 
 body{
+    min-width: 576px;
     min-height: 100%;
     background-image: url(img/freepik__upload__49501.jpeg);
     background-position: center;
@@ -26,18 +27,14 @@ main{
     }
 }
 
-.footer{
+footer{
     height: 10%;
 }
 
 @media only screen and (min-width: 1200px) {
-    .footer {
+    footer {
       padding-top:5%;
     }
-}
-
-.hidden{
-    opacity: 0%;
 }
 
 #spaceblock{

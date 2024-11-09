@@ -19,17 +19,9 @@ if (posicao >= 3 || posicao <= -5) {
 }
 }
 
-// Inicia a animação chamando a função a cada 20ms
+// Inicia a animação chamando a função a cada 50ms
 setInterval(animarSeta, 50);
 
 const setaoff = document.getElementById('seta');
 
-function hidden(){
-    const footer = document.querySelectorAll('.footer')
-    if (footer.offsetHeight < 1200){
-        footer.setAtribute('class','.hidden')
-    }
-}
-
-hidden()
 
