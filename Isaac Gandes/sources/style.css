@@ -1,3 +1,8 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,7 +10,7 @@
 }
 
 body{
-    min-width: 576px;
+    min-width: 400px;
     min-height: 100%;
     background-image: url(img/freepik__upload__49501.jpeg);
     background-position: center;
@@ -13,28 +18,17 @@ body{
     background-size: cover;
 }
 
+.container{
+    height: 100% !important;
+}
+
 header{
     height: 10%;
 }
 
 main{
-    height: 80%;
-}
-
-@media only screen and (min-width: 1200px) {
-    main {
-      padding-top:5%;
-    }
-}
-
-footer{
-    height: 10%;
-}
-
-@media only screen and (min-width: 1200px) {
-    footer {
-      padding-top:5%;
-    }
+    height: 90%;
+    padding-top:10vh;
 }
 
 #spaceblock{
