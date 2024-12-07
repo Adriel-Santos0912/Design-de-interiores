@@ -28,13 +28,13 @@ body{
 header{
     height: 7%;
     background-color: #c1c1c1a9;
-    animation: header 2s forwards;
 }
 
 #blocoHeader{
     width: 80%;
     height: 100%;
     margin: auto;
+    animation: header 2s forwards;
 }
 
 @keyframes header{
