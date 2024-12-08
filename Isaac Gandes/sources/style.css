@@ -21,13 +21,13 @@ body{
 }
 
 #section1{
-    height: 93%;
+    height: 92%;
 
 }
 
 header{
-    height: 7%;
-    background-color: #c1c1c1a9;
+    height: 8%;
+    box-shadow: 5px 5px 10px #ffffff46;
 }
 
 #blocoHeader{
@@ -69,6 +69,56 @@ header{
 main{
     width: 100%;
     height: 80%;
+}
+
+#position{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#spaceImage{
+    width: 80%;
+    border-radius: 50px;
+    padding: 50px;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+@media screen and (min-width:768px) {
+    #spaceImage{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+#img1{
+    transition-delay: 1s;
+    animation: img1 5s forwards;
+}
+@keyframes img1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#img2{
+    animation-delay: 100s;
+    animation: img2 5s forwards;
+}
+@keyframes img2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 #spaceblock{
