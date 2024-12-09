@@ -3,7 +3,7 @@ const footer = document.querySelector('footer');
 
 function checkWidth(){
         // Verifica a altura do footer
-    if (window.innerWidth > 820) {
+    if (window.innerWidth > 1000) {
         footer.style.display = 'grid'
     } else {
         footer.style.display = 'none'
