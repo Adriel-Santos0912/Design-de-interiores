@@ -1,0 +1,853 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+      display: none;
+}
+
+/* primeira tela */
+
+body{
+    height: 100%;
+    min-width: 400px;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    float: right;
+    z-index: 1;
+}
+
+#blocoHeader{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    animation: header 2s forwards;
+}
+
+@keyframes header{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1s;
+    }
+}
+
+.header #logoposition{
+    height: 100%;
+    display: flex;
+    top: 10px;
+}
+
+.header #logoposition a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.rool{
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    float: right;
+    z-index: 1;
+    animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+      height: 6%;
+    }
+
+    100% {
+      height: 8%;
+    }
+}
+
+.rool #logoposition{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logoBlack{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.headerSmall{
+    width: 100%;
+    background-image: url(img/logoHeaderBlack.png);
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position-x: 15%;
+    background-position-y: 100%;
+    position: fixed;
+    float: right;
+    animation: trasferHeight 0.5s ease forwards;
+    z-index: 1;
+}
+
+@keyframes trasferHeight {
+    from {
+      height: 8%;
+    }
+    to {
+      height: 7%;
+    }
+  }
+
+.headerSmall #logoposition{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.headerSmall #logoposition a img{
+    width: 160px;
+}
+
+#btnposition{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btnContact{
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 10px;
+    transition: all 700ms;
+}
+
+.btnContact:hover{
+    background-color: #fff;
+    color: #000000b0;
+    box-shadow: 5px 5px 10px #97979794;
+}
+
+.btnContactBlack{
+    color: #d3bca7;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 10px;
+    transition: all 700ms;
+}
+
+.btnContactBlack:hover{
+    background-color: #d3bca7;
+    color: #ffffff;
+    box-shadow: 5px 5px 10px #97979794;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#section1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+}
+
+main{
+    width: 100%;
+    height: 80%;
+}
+
+#position{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#spaceImage{
+    width: 80%;
+    border-radius: 50px;
+    padding: 50px;
+    margin: auto;
+    position: absolute;
+    top: 26%;
+    left: 10%;
+}
+
+    /* resolução macbook */
+@media screen and (min-width:1000px) {
+    #spaceImage{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+    /* resolução ipad */
+@media screen and (max-width:999px) {
+    #position{
+        width: 100%;
+        height: 100%;
+    }
+    #img1{
+        width: 400px;
+        height: auto;
+        margin-left: 10%;
+        padding-bottom: 150px;
+    }
+    #img2{
+        width: 500px;
+        height: auto;
+    }
+    #spaceImage{
+        background-color: #35353515;
+        position: absolute;
+        top: 10%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+    /* resolução iphone */
+@media screen and (max-width:480px) {
+    #img1{
+        width: 300px;
+        height: auto;
+        margin-left: 5%;
+        padding-bottom: 100px;
+    }
+    #img2{
+        width: 350px;
+        height: auto;
+    }
+    #spaceImage{
+        background-color: #35353515;
+        position: absolute;
+        top: 20%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+    /* resolução iphone pequeno */
+@media screen and (max-width:400px) {
+    #img1{
+        width: 300px;
+        height: auto;
+        margin-left: 5%;
+        padding-bottom: 100px;
+    }
+    #img2{
+        width: 350px;
+        height: auto;
+    }
+    #spaceImage{
+        background-color: #35353515;
+        position: absolute;
+        top: 20%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#image1{
+    animation: img1 2s forwards;
+}
+
+@keyframes img1{
+    0%{
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    50%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+#image2{
+    animation: img2 3s forwards;
+}
+
+@keyframes img2{
+    0%{
+        opacity: 0;
+        transform: translateX(30%);
+    }
+    50%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+#spaceblock{
+    height: 100%;
+    background-color: #20202071;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px #000000cb;
+}
+
+#blockmain{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#blockLogo{
+    border-radius: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 8%;
+    animation: opacidadeseta 2s forwards;
+}
+
+@keyframes opacidadeseta{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#fixedElement {
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+    justify-content: center;
+    transition: opacity 0.3s ease; /* Animação de suavidade */
+}
+
+#fixedElement.hidden {
+    opacity: 0;
+    pointer-events: none; /* Impede interações quando escondido */
+}
+
+#seta{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.seta{
+    font-size: 80px;
+    position: relative;
+}
+
+/* segunda tela */
+
+#section2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#itens{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+article{
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.area-1, .area-2 {
+    opacity: 0;
+    transform: translateX(20px);
+    filter: blur(10px);
+    transition: opacity 1s ease, transform 0.5s ease,filter 1.5s ease;
+}
+  
+.area-visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+@media screen and (min-width:1000px){
+
+    #positionElements{
+        width: 100vh;
+        height: 100%;
+        display: flex;
+    }
+
+    #positionImg{
+        width: 100%;
+        height: 100%;
+    }
+
+    #fixarImg{
+        width: 100vh;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #widthImg{
+        width: 50vh;
+        height: 70%;
+    }
+
+    #positionImg #imagem1{
+        width: 100%;
+        height: 100%;
+        background-image: url(img/imgProjetosIsaac/desktop_home_office.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+
+    #positionDescricao{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #descricao{
+        width: 50vh;
+    }
+
+    #descricao h1{
+        text-align: center;
+    }
+
+    #descricao p{
+        text-align: center;
+        margin-bottom: 5em;
+    }
+
+    #button{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:999px) {
+    .headerSmall{
+        background-size: 20%;
+        background-position-y: 80%;
+    }
+
+    #section2{
+        position: relative;
+    }
+
+    #positionElements{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        height:90%;
+        display: grid;
+    }
+    
+    #positionImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fixarImg{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #widthImg{
+        width: 70%;
+        height: 100%;
+    }
+    
+    #imagem1{
+        width: 100%;
+        height: 100%;
+        background-image: url(img/imgProjetosIsaac/desktop_home_office.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+    
+    #positionDescricao{
+        width: 100%;
+        height:40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #descricao{
+        display: grid;
+        text-align: center;
+    }
+    #descricao h1{
+        font-size: 30px;
+    }
+    #descricao p{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+/* 3 Tela reverse */
+#section3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#itensReverse{
+    width: 100%;
+    height: 100%;
+}
+
+#containerReverse{
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    animation: hidden 1s forwards;
+}
+
+@keyframes hidden {
+    0% {
+        display: block;
+        width: 100%;
+    }
+
+    95%{
+        display: none;
+    }
+
+    100% {
+        width: 0%; 
+    }
+}
+
+.show {
+    animation: show 1s forwards;
+}
+
+@keyframes show {
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+    /* screen pc/nootbook reverse */
+@media screen and (min-width:1000px){
+
+    #positionElementsReverse{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        position: absolute;
+        top: 5%;
+    }
+    
+    #positionImgReverse{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #widthImgReverse{
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #click{
+        width: 100%;
+        height: 5%;
+        position: fixed;
+        bottom: 80px;
+        text-align: center;
+    }
+    
+    .imagem1, .imagem2{
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+
+    .imagem1{
+        background-image: url(img/imgProjetosIsaac/Banheiro.png);
+    }
+
+    .imagem2{
+        background-image: url(img/imgProjetosIsaac/Banheiro\ part\ 2.png);
+    }
+    
+    #positionDescricaoReverse{
+        width: 50%;
+        height: 100%;
+    }
+
+    #widthDescricao{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #descricaoReverse{
+        width: 50%;
+    }
+
+    #descricaoReverse p{
+        margin-bottom: 5em;
+    }
+    
+}
+    /* screen mobile reverse */
+@media screen and (max-width:999px) {
+    .headerSmall{
+        background-size: 20%;
+        background-position-y: 80%;
+    }
+
+    #section3{
+        width: 100%;
+        height: 100vh;
+    }
+
+    article{
+        width: 100%;
+        height: 100%;
+    }
+
+    #positionElementsReverse{
+        width: 100%;
+        height:100vh;
+        display: grid;
+    }
+
+    #positionDescricaoReverse{
+        width: 100%;
+        height:40vh;
+        margin-top: 10vh;
+        padding-bottom: 20%;
+        text-align: center;
+    }
+
+    #widthDescricao{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #descricaoReverse{
+        width: 50%;
+    }
+
+    #descricaoReverse p{
+        margin-bottom: 2em;
+    }
+
+    #positionImgReverse{
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #click{
+        width: 100%;
+        height: 5%;
+        position: fixed;
+        bottom: -20px;
+        text-align: center;
+    }
+
+    #widthImgReverse{
+        width: 70%;
+        height: 100%;
+        display: flex;
+    }
+
+    .imagem1, .imagem2{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+
+    .imagem1{
+        background-image: url(img/imgProjetosIsaac/Banheiro.png);
+    }
+
+    .imagem2{
+        background-image: url(img/imgProjetosIsaac/Banheiro\ part\ 2.png);
+    }
+}
+    /* screen mobile pequeno reverse */
+@media screen and (max-width:400px) {
+    
+    .headerSmall{
+        background-size: 20%;
+        background-position-y: 80%;
+    }
+
+    #section3{
+        width: 100%;
+        height: 100vh;
+    }
+
+    article{
+        width: 100%;
+        height: 100%;
+    }
+
+    #positionElementsReverse{
+        width: 100%;
+        height:100vh;
+        display: grid;
+    }
+
+    #positionDescricaoReverse{
+        width: 100%;
+        height:40vh;
+        margin-top: 10vh;
+        padding-bottom: 20%;
+        text-align: center;
+    }
+
+    #widthDescricao{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #descricaoReverse{
+        padding-top: 100px;
+        width: 50%;
+    }
+
+    #positionImgReverse{
+        width: 100%;
+        height: 40vh;
+        margin-top: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #click{
+        width: 100%;
+        height: 5%;
+        position: fixed;
+        bottom: -20px;
+        text-align: center;
+    }
+
+    #widthImgReverse{
+        width: 70%;
+        height: 100%;
+        display: flex;
+    }
+
+    .imagem1, .imagem2{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+
+    .imagem1{
+        background-image: url(img/imgProjetosIsaac/Banheiro.png);
+    }
+
+    .imagem2{
+        background-image: url(img/imgProjetosIsaac/Banheiro\ part\ 2.png);
+    } 
+    
+}
