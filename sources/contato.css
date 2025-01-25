@@ -83,7 +83,7 @@ main{
 
 #blockStyle{
     display: flex;
-    background-color: #4d4038;
+    background-color: #382f29;
     width: 30%;
     height: 94%;
     float: left;
@@ -177,7 +177,7 @@ main{
                     height: 80%;
                     background: #c1c1c1;
                     border-radius: 38px;
-                    box-shadow: -15px -15px 10px #999999b6;
+                    box-shadow: -10px -15px 20px #5f5f5fb6;
                     display: flex;
                     justify-content: center;
                     align-items: center;
