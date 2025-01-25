@@ -195,7 +195,7 @@ main{
     padding: 50px;
     margin: auto;
     position: absolute;
-    top: 26%;
+    top: 2.5rem;
     left: 10%;
 }
 
@@ -359,12 +359,12 @@ footer{
     position: fixed;
     bottom: 20px;
     justify-content: center;
-    transition: opacity 0.3s ease; /* Animação de suavidade */
+    transition: opacity 0.3s ease;
 }
 
 #fixedElement.hidden {
     opacity: 0;
-    pointer-events: none; /* Impede interações quando escondido */
+    pointer-events: none;
 }
 
 #seta{
@@ -382,16 +382,13 @@ footer{
 
 #section2{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url(img/bg2.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
-#itens{
-    width: 100%;
-    height: 100%;
-}
 
 #container{
     width: 100%;
@@ -417,36 +414,27 @@ article{
     filter: blur(0);
     transform: translateY(0);
 }
-
+    /* Resolução em Desktop */
 @media screen and (min-width:1000px){
 
     #positionElements{
-        width: 100vh;
+        min-width: 50%;
         height: 100%;
         display: flex;
     }
-
+    
+    /* Imagem */
     #positionImg{
-        width: 100%;
-        height: 100%;
-    }
-
-    #fixarImg{
-        width: 100vh;
+        width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    #widthImg{
-        width: 50vh;
-        height: 70%;
-    }
-
-    #positionImg #imagem1{
-        width: 100%;
-        height: 100%;
+    #imagem1{
+        width: 60%;
+        height: 80%;
         background-image: url(img/imgProjetosIsaac/desktop_home_office.jpg);
         background-position: center;
         background-size: cover;
@@ -454,8 +442,10 @@ article{
         border-radius: 50px;
     }
 
+    /* Descrição */
+
     #positionDescricao{
-        width: 100%;
+        width: 50%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -463,7 +453,7 @@ article{
     }
     
     #descricao{
-        width: 50vh;
+        width: 50%;
     }
 
     #descricao h1{
@@ -481,7 +471,7 @@ article{
     }
 
 }
-
+    /* Resolução em mobile */
 @media screen and (max-width:999px) {
     .headerSmall{
         background-size: 20%;
@@ -489,19 +479,19 @@ article{
     }
 
     #section2{
+        height: auto;
         position: relative;
     }
 
     #positionElements{
         position: absolute;
-        top: 10%;
         width: 100%;
-        height:90%;
-        display: grid;
+        height: 100%;
     }
     
     #positionImg{
         width: 100%;
+        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -509,20 +499,15 @@ article{
 
     #fixarImg{
         width: 100%;
-        height: 50vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    #widthImg{
-        width: 70%;
-        height: 100%;
-    }
-    
     #imagem1{
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 90%;
         background-image: url(img/imgProjetosIsaac/desktop_home_office.jpg);
         background-position: center;
         background-size: cover;
@@ -532,7 +517,7 @@ article{
     
     #positionDescricao{
         width: 100%;
-        height:40%;
+        height:50%;
         display: flex;
         justify-content: center;
     }
@@ -551,6 +536,16 @@ article{
         margin-top: 20px;
         font-size: 20px;
     }
+
+    #title{
+        height: 20%;
+    }
+    #text{
+        height: 60%;
+    }
+    #button{
+        height: 20%;
+    }
 }
 
 /* 3 Tela reverse */
@@ -558,6 +553,7 @@ article{
     width: 100%;
     height: 100vh;
     background-image: url(img/bg2.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
@@ -596,6 +592,7 @@ article{
 }
 
 @keyframes show {
+
     0% {
         width: 0%;
     }
@@ -604,7 +601,7 @@ article{
     }
 }
 
-    /* screen pc/nootbook reverse */
+    /* screen desktop reverse */
 @media screen and (min-width:1000px){
 
     #positionElementsReverse{
@@ -850,4 +847,10 @@ article{
         background-image: url(img/imgProjetosIsaac/Banheiro\ part\ 2.png);
     } 
     
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: -20px;
 }
