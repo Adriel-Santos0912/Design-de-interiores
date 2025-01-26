@@ -6,14 +6,15 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
 }
 
 header{
     width: 100%;
-    height: 6%;
+    min-height: 6vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #3D3D3D;
     z-index: 10;
 }
@@ -71,7 +72,7 @@ header{
 
 main{
     width: 100%;
-    height: 94%;
+    min-height: 94vh;
     background-image: url("./img/bg.png");
     background-size: cover;
     background-position: bottom center;
@@ -82,11 +83,9 @@ main{
 }
 
 #blockStyle{
-    display: flex;
-    background-color: #382f29;
     width: 30%;
     height: 94%;
-    float: left;
+    background-color: #382f29;
     position: absolute;
     left: 2%;
     animation: 1s blockStyle forwards; 
@@ -174,7 +173,7 @@ main{
 
                 #form{
                     width: 80%;
-                    height: 80%;
+                    min-height: 100%;
                     background: #c1c1c1;
                     border-radius: 38px;
                     box-shadow: -10px -15px 20px #5f5f5fb6;
@@ -199,7 +198,7 @@ main{
 
                     form{
                         width: 80%;
-                        height: 90%;
+                        height: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
