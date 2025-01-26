@@ -849,8 +849,18 @@ article{
     
 }
 
-footer{
+#footer{
     position: fixed;
     bottom: 0;
     right: -20px;
+}
+
+button{
+    background-color: #d3bca700;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: medium;
+    transition: all 700ms;
 }
