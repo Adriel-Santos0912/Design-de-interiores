@@ -1,6 +1,6 @@
 const pImagem = document.querySelector('.imagem1');
 const sImagem = document.querySelector('.imagem2');
-const clique = document.querySelector('#click');
+const clique = document.querySelector('.click');
 
 function verificarResolucao() {
     if(pImagem){
