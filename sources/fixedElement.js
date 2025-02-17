@@ -13,7 +13,7 @@ let trocaImg = document.getElementById("trocaDeLogo")
         img.style.display= 'none'
         contact.classList.remove('btnContact')
         contact.classList.add('btnContactBlack')
-        trocaImg.innerHTML = "<img id='logoBlack' class='img-fluid' src='sources/img/logoHeaderBlack.png' alt=''>"
+        trocaImg.innerHTML = "<img id='logoBlack' class='img-fluid' src='sources/img/logoHeaderBlack.png' width='90%' alt=''>"
       } else {
         // Mostra o elemento novamente quando voltar ao topo
         fixedElement.classList.remove('hidden');
@@ -23,6 +23,6 @@ let trocaImg = document.getElementById("trocaDeLogo")
         img.style.display= 'inline'
         contact.classList.add('btnContact')
         contact.classList.remove('btnContactBlack')
-        trocaImg.innerHTML = "<img id='logo' class='img-fluid' src='sources/img/logoHeader.png' alt=''>"
+        trocaImg.innerHTML = "<img id='logo' class='img-fluid' src='sources/img/logoHeader.png' width='90%' alt=''>"
       }
     });
