@@ -1,5 +1,5 @@
-const pImagem = document.querySelector('.imagem1');
-const sImagem = document.querySelector('.imagem2');
+const pImagem = document.querySelector('.imagemReverse1');
+const sImagem = document.querySelector('.imagemReverse2');
 const clique = document.querySelector('.click');
 
 function verificarResolucao() {
@@ -7,7 +7,7 @@ function verificarResolucao() {
         pImagem.addEventListener('click', () => {
             sImagem.classList.remove('show');
             sImagem.classList.add('hidden');
-            clique.style.display = 'none';
+            clique.style.visibility = 'hidden';
         });
 
         pImagem.addEventListener('mouseout', () => {
@@ -16,14 +16,14 @@ function verificarResolucao() {
             setTimeout(() => {
                 sImagem.classList.remove('hidden');
                 sImagem.classList.add('show');
-            }, 0);
+            }, 1);
         });
     }
     if(sImagem){
         sImagem.addEventListener('click', () => {
             pImagem.classList.remove('show');
             pImagem.classList.add('hidden');
-            clique.style.display = 'none';
+            clique.style.visibility = 'hidden';
         });
         // Função para remover o efeito
         sImagem.addEventListener('mouseout', () => {
@@ -32,7 +32,7 @@ function verificarResolucao() {
             setTimeout(() => {
                 pImagem.classList.remove('hidden');
                 pImagem.classList.add('show');
-            }, 0);
+            }, 1);
         });
     }
 }

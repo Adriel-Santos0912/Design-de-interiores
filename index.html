@@ -98,26 +98,38 @@
                         </div>
                     </div>
                     <div class="positionImgReverse area-1">
-                        <div class="click"><h3>Clique na imagem</h3></div>
-                        <div class="widthImgReverse">
+                        <div class="widthImgReverse ">
                             
-                            <div class="imagem1">
+                            <div class="imagemReverse1">
                                <!-- img here in css -->
                             </div>
                             <div class="gap" style="width: 20px; height: 100%;"></div>
-                            <div class="imagem2">
+                            <div class="imagemReverse2">
                                 <!-- img here in css -->
                              </div>
                         </div>
+                        <div class="click"><h3>Clique na imagem</h3></div>
                     </div>
                 </div>
             </article>
         </div>
     </section>
 
-    <!-- <div class="p-2">
-        <button onclick="btnAddNormal()" class="text-dark">+</button>
-    </div> -->
+    <button id="buttonAdd" onclick="addStructures()" class="text-dark"><img id="addStructure" src="sources/img/mais.png" width="40px" height="40px" alt=""></button>
+
+    <div id="tableBtn">
+        <input class="mb-3" id="file" type="file">
+
+        <label for="titulo">Titulo:</label>
+        <input class="mb-3" id="title" type="text" name="titulo" placeholder="  Insira um titulo">
+
+        <label for="text">Descrição:</label>
+        <textarea class="mb-4" name="text" id="paragrafo" rows="10" placeholder="  Insira uma descrição"></textarea>
+
+        <div id="btnForm">
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
 
 
     
@@ -129,7 +141,7 @@
 <script src="sources/img.js"></script>
 <script src="sources/revelation.js"></script>
 <script src="sources/transformWidthImg.js"></script>
-<script src="sources/addStructure.js"></script>
+<script src="sources/btnAdd.js"></script>
     <!-- bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

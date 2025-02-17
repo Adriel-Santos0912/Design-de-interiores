@@ -188,6 +188,9 @@ main{
 #position{
     min-width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #spaceImage{
@@ -196,7 +199,7 @@ main{
     padding: 50px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -214,6 +217,10 @@ footer{
         justify-content: space-between;
         align-items: center;
     }
+    #position{
+        min-width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -223,10 +230,16 @@ footer{
         width: 100%;
         height: 100%;
     }
+
+    #image1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #img1{
         width: 400px;
         height: auto;
-        margin-left: 10%;
         padding-bottom: 150px;
     }
     #img2{
@@ -249,7 +262,6 @@ footer{
     #img1{
         width: 300px;
         height: auto;
-        margin-left: 5%;
         padding-bottom: 100px;
     }
     #img2{
@@ -272,7 +284,6 @@ footer{
     #img1{
         width: 300px;
         height: auto;
-        margin-left: 5%;
         padding-bottom: 100px;
     }
     #img2{
@@ -493,68 +504,61 @@ article{
         position: relative;
     }
 
-    #positionElements{
-        position: absolute;
-        width: 100%;
+    .positionElements{
+        min-width: 50%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
-    #positionImg{
-        width: 100%;
-        height: 50%;
+    /* Imagem */
+    .positionImg{
+        min-width: 60%;
+        height: 65%;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 15%;
     }
 
-    #fixarImg{
+    .imagem1{
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #imagem1{
-        width: 80%;
-        height: 90%;
         background-image: url(img/imgProjetosIsaac/desktop_home_office.jpg);
-        background-position: center;
+        background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 50px;
     }
     
-    #positionDescricao{
-        width: 100%;
-        height:50%;
+    /* Descrição */
+
+    .positionDescricao{
+        min-width: 100%;
+        height: 35%;
         display: flex;
         justify-content: center;
+        align-items: center;
+    }
+    
+    .descricao{
+        width: 80%;
+        height: 90%;
     }
 
-    #descricao{
-        display: grid;
+    .descricao h1{
         text-align: center;
     }
-    #descricao h1{
-        font-size: 30px;
-    }
-    #descricao p{
-        width: 70%;
-        margin: auto;
-        margin-bottom: 50px;
-        margin-top: 20px;
-        font-size: 20px;
+
+    .descricao p{
+        text-align: center;
     }
 
-    #title{
-        height: 20%;
-    }
-    #text{
-        height: 60%;
-    }
-    #button{
-        height: 20%;
+    .button{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -593,16 +597,16 @@ article{
 }
 
 .show {
-    animation: show 1s forwards;
+    animation: show 2s forwards;
 }
 
 @keyframes show {
 
     0% {
-        width: 0%;
+        opacity: 0%;
     }
     100%{
-        width: 100%;
+        opacity: 100%;
     }
 }
 
@@ -621,6 +625,7 @@ article{
         width: 50%;
         height: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -631,16 +636,8 @@ article{
         display: flex;
         justify-content: center;
     }
-
-    .click{
-        width: 100%;
-        height: 5%;
-        position: fixed;
-        bottom: 80px;
-        text-align: center;
-    }
     
-    .imagem1, .imagem2{
+    .imagemReverse1, .imagemReverse2{
         cursor: pointer;
         width: 100%;
         height: 100%;
@@ -650,11 +647,11 @@ article{
         border-radius: 50px;
     }
 
-    .imagem1{
+    .imagemReverse1{
         background-image: url(img/imgProjetosIsaac/Banheiro.png);
     }
 
-    .imagem2{
+    .imagemReverse2{
         background-image: url(img/imgProjetosIsaac/Banheiro\ part\ 2.png);
     }
     
@@ -732,17 +729,11 @@ article{
         height: 40vh;
         margin-bottom: 10vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .click{
-        width: 100%;
-        height: 5%;
-        position: fixed;
-        bottom: -20px;
-        text-align: center;
-    }
 
     .widthImgReverse{
         width: 70%;
@@ -750,7 +741,7 @@ article{
         display: flex;
     }
 
-    .imagem1, .imagem2{
+    .imagemReverse1, .imagemReverse2{
         width: 100%;
         height: 100%;
         background-position: center;
@@ -759,11 +750,11 @@ article{
         border-radius: 50px;
     }
 
-    .imagem1{
+    .imagemReverse1{
         background-image: url(img/imgProjetosIsaac/Banheiro.png);
     }
 
-    .imagem2{
+    .imagemReverse2{
         background-image: url(img/imgProjetosIsaac/Banheiro\ part\ 2.png);
     }
 }
@@ -817,17 +808,11 @@ article{
         height: 40vh;
         margin-top: 8vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .click{
-        width: 100%;
-        height: 5%;
-        position: fixed;
-        bottom: -20px;
-        text-align: center;
-    }
 
     .widthImgReverse{
         width: 70%;
@@ -835,7 +820,7 @@ article{
         display: flex;
     }
 
-    .imagem1, .imagem2{
+    .imagemReverse1, .imagemReverse2{
         width: 100%;
         height: 100%;
         background-position: center;
@@ -844,28 +829,86 @@ article{
         border-radius: 50px;
     }
 
-    .imagem1{
+    .imagemReverse1{
         background-image: url(img/imgProjetosIsaac/Banheiro.png);
     }
 
-    .imagem2{
+    .imagemReverse2{
         background-image: url(img/imgProjetosIsaac/Banheiro\ part\ 2.png);
     } 
     
 }
 
-#footer{
+#addStructure{
+    width: 40px;
+    height: 40px;
     position: fixed;
-    bottom: 0;
-    right: -20px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 100%;
+    background-color: #0c61d1;
+    padding: 5px;
+    z-index: 2;
 }
 
-button{
-    background-color: #d3bca700;
-    color: #ffffff;
+#tableBtn{
+    overflow: hidden;
+    background-color: #c1c1c1;
+    padding: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 80px;
+    bottom: 60px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#btnForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnForm button{
+    width: 30%;
+    color: #fff;
+    background-color: #0c61d1;
+    border-radius: 50px;
     border: none;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: medium;
-    transition: all 700ms;
+}
+
+.showForm{
+    animation: formshow 1s forwards;
+}
+
+@keyframes formshow {
+    from{
+        width: 0px;
+        height: 0%;
+        visibility: hidden;
+    }
+    to{
+        width: 400px;
+        height: 70%;
+        visibility: visible;
+    }
+}
+
+.hiddenForm{
+    animation: form .4s forwards;
+}
+
+@keyframes form {
+    from{
+        width: 400px;
+        height: 70%;
+        visibility: visible;
+    }
+    to{
+        width: 0px;
+        height: 0%;
+        visibility: hidden;
+    }
 }
