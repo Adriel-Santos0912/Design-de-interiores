@@ -1,5 +1,5 @@
-const pImagem = document.querySelector('#imagemProjeto2');
-const sImagem = document.querySelector('#imagemProjeto3');
+const pImagem = document.querySelector('.imagemReverse1');
+const sImagem = document.querySelector('.imagemReverse2');
 
 function verificarResolucao() {
     if(pImagem){

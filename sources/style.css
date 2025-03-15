@@ -444,7 +444,7 @@ article{
         align-items: center;
     }
     
-    /* Imagem */
+    /* Imagem Desktop*/
     .positionImg2{
         width: 30%;
         height: 80%;
@@ -456,11 +456,15 @@ article{
     .imagem1{
         width: 100%;
         height: 100%;
-        background-image: url(img/imgProjetosIsaac/desktop_home_office.jpg);
+    }
+
+    #imagem1{
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        border-radius: 50px;
     }
 
     /* Descrição */
@@ -522,7 +526,7 @@ article{
         align-items: center;
         padding-top: 15%;
     }
-
+    
     .imagem1{
         width: 100%;
         height: 100%;
@@ -532,6 +536,7 @@ article{
         background-repeat: no-repeat;
         border-radius: 50px;
     }
+    
     
     /* Descrição */
 
@@ -645,14 +650,6 @@ article{
         background-size: cover;
         background-repeat: no-repeat;
         border-radius: 50px;
-    }
-
-    .imagemReverse1{
-        background-image: url(img/imgProjetosIsaac/Banheiro.png);
-    }
-
-    .imagemReverse2{
-        background-image: url(img/imgProjetosIsaac/Banheiro\ part\ 2.png);
     }
     
     .positionDescricaoReverse{
@@ -971,7 +968,11 @@ article{
     .imagem3{
         width: 100%;
         height: 100%;
-        background-image: url(img/imgProjetosIsaac/gabineteComGeladeira.jpg);
+    }
+
+    #imagem4{
+        width: 100%;
+        height: 100%;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
