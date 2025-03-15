@@ -445,7 +445,7 @@ article{
     }
     
     /* Imagem */
-    .positionImg{
+    .positionImg2{
         width: 30%;
         height: 80%;
         display: flex;
@@ -514,7 +514,7 @@ article{
     }
     
     /* Imagem */
-    .positionImg{
+    .positionImg2{
         min-width: 60%;
         height: 65%;
         display: flex;
@@ -910,5 +910,169 @@ article{
         width: 0px;
         height: 0%;
         visibility: hidden;
+    }
+}
+
+/* Projeto3 */
+.section3{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container3{
+    width: 100%;
+    height: 100%;
+}
+
+article{
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.area-1, .area-2 {
+    opacity: 0;
+    transform: translateX(20px);
+    filter: blur(10px);
+    transition: opacity 1s ease, transform 0.5s ease,filter 1.5s ease;
+}
+  
+.area-visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+    /* Resolução em Desktop */
+@media screen and (min-width:1000px){
+
+    .positionElements{
+        min-width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Imagem */
+    .positionImg3{
+        width: 40%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem3{
+        width: 100%;
+        height: 100%;
+        background-image: url(img/imgProjetosIsaac/gabineteComGeladeira.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+
+    /* Descrição */
+
+    .positionDescricao{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .descricao{
+        width: 50%;
+    }
+
+    .descricao h1{
+        text-align: center;
+    }
+
+    .descricao p{
+        text-align: center;
+        margin-bottom: 5em;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+    /* Resolução em mobile */
+@media screen and (max-width:999px) {
+    .headerSmall{
+        background-size: 20%;
+        background-position-y: 80%;
+    }
+
+    #section3{
+        height: auto;
+        position: relative;
+    }
+
+    .positionElements{
+        min-width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Imagem */
+    .positionImg3{
+        min-width: 60%;
+        height: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15%;
+    }
+
+    .imagem3{
+        width: 100%;
+        height: 100%;
+        background-image: url(img/imgProjetosIsaac/gabineteComGeladeira.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+    
+    /* Descrição */
+
+    .positionDescricao{
+        min-width: 100%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .descricao{
+        width: 80%;
+        height: 90%;
+    }
+
+    .descricao h1{
+        text-align: center;
+    }
+
+    .descricao p{
+        text-align: center;
+    }
+
+    .button{
+        display: flex;
+        justify-content: center;
     }
 }

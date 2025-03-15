@@ -85,7 +85,7 @@ main{
 #blockStyle{
     width: 30%;
     height: 94%;
-    background-color: #382f29;
+    background-color: #5C4033;
     position: absolute;
     left: 2%;
     animation: 1s blockStyle forwards; 
@@ -140,7 +140,7 @@ main{
                         height: 100%;
                         background: #c1c1c1;
                         border-radius: 38px;
-                        box-shadow: 5px 5px 10px #ffffff50;
+                        /* box-shadow: 5px 5px 10px #ffffff50; */
                         display: flex;
                         justify-content: space-around;
                         align-items: center;
@@ -176,7 +176,7 @@ main{
                     min-height: 100%;
                     background: #c1c1c1;
                     border-radius: 38px;
-                    box-shadow: -10px -15px 20px #5f5f5fb6;
+                    /* box-shadow: -10px -15px 20px #5f5f5fb6; */
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -219,7 +219,7 @@ main{
                         font-weight: 500;
                         font-style: normal;
                         color: #ffffff;
-                        background-color: #343134;
+                        background-color: #2b221f;
                     }
 
             #text{
@@ -238,7 +238,7 @@ main{
                 height: 100%;
                 background: #c1c1c1;
                 border-radius: 38px;
-                box-shadow: 10px 15px 20px #ffffff50;
+                /* box-shadow: 10px 15px 20px #ffffff50; */
                 display: flex;
                 flex-direction: column;
                 padding-top: 3%;
