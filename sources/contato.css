@@ -6,12 +6,13 @@
 
 body{
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
+    font-family: Arial,;
 }
 
 header{
     width: 100%;
-    min-height: 6vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,607 +72,137 @@ header{
     }
 
 main{
-    width: 100%;
-    min-height: 94vh;
-    background-image: url("./img/bg.png");
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(img/imgProjetosIsaac/cozinha\ gray.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-
-#blockStyle{
-    width: 30%;
-    height: 94%;
-    background-color: #5C4033;
-    position: absolute;
-    left: 2%;
-    animation: 1s blockStyle forwards; 
-}
-
-@keyframes blockStyle{
-    from{
-        opacity: 0;
-        height: 0%;
+    .block{
+        width: 40%;
+        min-height: 80vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
-    to{
-        opacity: 1;
-        height: 94%;
-    }
-}
-    /* desktop */
-@media screen and (min-width: 1025px){
-    #container{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-        #elements {
-            width: 90%;
-            height: 90%;
-            display: flex;
-        }
-
-            #formulario{
-                width: 50%;
-                height: auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 40px;
-            }
-
-                #sociais{
-                    width: 80%;
-                    height: 13%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 1;
-                }
-
-                    #redes{
-                        width: 85%;
-                        height: 100%;
-                        background: #c1c1c1;
-                        border-radius: 38px;
-                        /* box-shadow: 5px 5px 10px #ffffff50; */
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-                        animation: redes .5s;
-                    }
-
-                    @keyframes redes{
-                        from{
-                            opacity: 0;
-                            transform: translateX(-100px);
-                        }
-                        to{
-                            opacity: 1;
-                            transform: translateX(0);
-                        }
-                    }
-
-                    #whatsapp{
-                        height: 90%;
-                    }
-
-                    #instagram{
-                        height: 90%;
-                    }
-
-                    #email{
-                        padding-top: 5px;
-                        height: 90%;
-                    }
-
-                #form{
-                    width: 80%;
-                    min-height: 100%;
-                    background: #c1c1c1;
-                    border-radius: 38px;
-                    /* box-shadow: -10px -15px 20px #5f5f5fb6; */
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 0;
-                    animation: form .5s forwards;
-                    
-                }
-
-                @keyframes form{
-                    from{
-                        opacity: 0;
-                        transform: translateX(-100px);
-                    }
-                    to{
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-
-                    form{
-                        width: 80%;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    label{
-                        font-family: "Poppins", serif;
-                        font-weight: 500;
-                        font-style: normal;
-                        color: #ffffff;
-                        font-size: 20px;
-                    }
-
-                    #buttonForm{
-                        width: 30%;
-                        font-family: "Poppins", serif;
-                        font-weight: 500;
-                        font-style: normal;
-                        color: #ffffff;
-                        background-color: #2b221f;
-                    }
-
-            #text{
-                width: 50%;
-                height: 100%;
-            }
-
-            #positionText{
-                width: 100%;
-                height: auto;
-                padding-top: 6%;
-            }
-
-            #bloco{
-                width: 90%;
-                height: 100%;
-                background: #c1c1c1;
-                border-radius: 38px;
-                /* box-shadow: 10px 15px 20px #ffffff50; */
-                display: flex;
-                flex-direction: column;
-                padding-top: 3%;
-                margin: auto;
-                opacity: 0;
-                animation: texto 1s forwards;
-                animation-delay: .7s;
-            }
-
-            @keyframes texto{
-                from{
-                    opacity: 0;
-                    transform: translateY(-100px);
-                }
-                to{
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            #titulo{
-                height: 20%;
-                color: #343134;
-                font-family: "bebas neue", sans-serif;
-                text-align: center;
-            }
-
-            #paragrafo{
-                width: 100%;
-                height: 70%;
-                color: #fff;
-                font-family: "Poppins", serif;
-                font-weight: 400;
-                font-style: normal;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            #paragrafo p{
-                width: 70%;
-                text-align: center;
-            }
-
-            #assinatura{
-                width: 100%;
-                height: 5vh;
-                position: relative;
-            }
-
-            #assinatura p{
-                position: absolute;
-                right: 5%;
-            }
-
-}
-    /* tablets */
-@media screen and (max-width: 1024px){
-    #blockStyle{
-        display: none;
-    }
-    #container{
-        width: 100%;
-        height: 100%;
-    }
-
-        #elements {
+        .social{
             width: 100%;
-            height: 100%;
+            height: 10vh;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            padding-top: 5%;
-            padding-bottom: 5%;
         }
-
-            #formulario{
-                width: 100%;
-                height: 80%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 40px;
+            #whatsapp{
+                width: 9%;
+                height: 10vh;
+                padding-top: 5px;
             }
-
-                #sociais{
-                    width: 80%;
-                    height: 13%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                    #redes{
-                        width: 85%;
-                        height: 100%;
-                        background: #c1c1c1;
-                        border-radius: 38px;
-                        box-shadow: 10px 15px 10px #ffffff50;
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-                        animation: redes .5s;
-                    }
-
-                    @keyframes redes{
-                        from{
-                            opacity: 0;
-                            transform: translateX(-100px);
-                        }
-                        to{
-                            opacity: 1;
-                            transform: translateX(0);
-                        }
-                    }
-
-                    #whatsapp{
-                        height: 90%;
-                    }
-
-                    #instagram{
-                        height: 90%;
-                    }
-
-                    #email{
-                        padding-top: 5px;
-                        height: 90%;
-                    }
-
-                #form{
-                    width: 80%;
-                    height: 100%;
-                    background: #c1c1c1;
-                    border-radius: 38px;
-                    box-shadow: 10px 15px 20px #ffffff50;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    opacity: 0;
-                    animation: form .5s forwards;
-                    
-                }
-
-                @keyframes form{
-                    from{
-                        opacity: 0;
-                        transform: translateX(-100px);
-                    }
-                    to{
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-
-                    form{
-                        width: 80%;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    label{
-                        font-family: "Poppins", serif;
-                        font-weight: 500;
-                        font-style: normal;
-                        color: #ffffff;
-                        font-size: 20px;
-                    }
-
-                    #buttonForm{
-                        width: 30%;
-                        font-family: "Poppins", serif;
-                        font-weight: 500;
-                        font-style: normal;
-                        color: #ffffff;
-                        background-color: #343134;
-                    }
-
-            #text{
-                width: 100%;
-                height: 40%;
+            #instagram{
+                width: 9%;
+                height: 10vh;
+                padding-top: 5px;
             }
-
-            #positionText{
-                width: 100%;
-                height: 100%;
-                padding-top: 6%;
+            #email{
+                width: 9%;
+                height: 10vh;
+                padding-top: 5px;
             }
-
-            #bloco{
-                width: 90%;
-                height: 100%;
-                background: #c1c1c1;
-                border-radius: 38px;
-                box-shadow: 10px 15px 20px #ffffff50;
-                display: flex;
-                flex-direction: column;
-                padding-top: 3%;
-                margin: auto;
-                opacity: 0;
-                animation: texto 1s forwards;
-                animation-delay: .7s;
-            }
-
-            @keyframes texto{
-                from{
-                    opacity: 0;
-                    transform: translateY(-100px);
-                }
-                to{
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            #titulo{
-                color: #343134;
-                font-family: "bebas neue", sans-serif;
-                text-align: center;
-            }
-
-            #paragrafo{
-                width: 100%;
-                color: #fff;
-                font-family: "Poppins", serif;
-                font-weight: 400;
-                font-style: normal;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            #paragrafo p{
-                width: 70%;
-                text-align: center;
-            }
-
-            #assinatura{
-                width: 100%;
-                height: 100%;
-                position: relative;
-            }
-
-            #assinatura p{
-                position: absolute;
-                right: 5%;
-            }
-}
-    /* mobile */
-@media screen and (max-width: 480px){
-    body{
-        min-width: 100%;
-        height: auto;
-    }
-
-    header{
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-
-    #blockStyle{
-        display: none;
-    }
-
-    #position{
-        width: 80%;
-    }
-    #container{
-        width: 100%;
-        height: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-        #elements {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0px;
+        .form{
+            min-width: 100%;
+            height: 65vh;
+            margin-top: 5vh;
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.863);
+            background-color: rgba(128, 128, 128, 0.459);
         }
-
-            #formulario{
-                width: 90%;
-                height: 100%;
-                background: #c1c1c1;
-                border-radius: 38px;
-                box-shadow: 10px 15px 20px #ffffff50;
-                padding-top: 2%;
-                padding-bottom: 5%;
-                gap: 0px;
+            form{
+                width: 100%;
+                display: grid;
+                padding-top: 10px;
             }
-
-                #sociais{
-                    width: 80%;
-                    height: 13%;
+                .nomeSobrenome{
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
                 }
-
-                    #redes{
-                        width: 85%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-                        background-color: transparent;
-                        box-shadow: none;
-                    }
-
-                    #whatsapp{
-                        height: 90%;
-                    }
-
-                    #instagram{
-                        height: 90%;
-                    }
-
-                    #email{
-                        padding-top: 5px;
-                        height: 90%;
-                    }
-
-                #form{
-                    width: 80%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: transparent;
-                    box-shadow: none;
-                }
-
-                    form{
-                        width: 80%;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    label{
-                        font-family: "Poppins", serif;
-                        font-weight: 500;
-                        font-style: normal;
-                        color: #ffffff;
-                        font-size: 20px;
-                    }
-
-                    #buttonForm{
+                    .nome{
                         width: 50%;
-                        font-family: "Poppins", serif;
-                        font-weight: 500;
+                    }
+                    .nome label{
+                        color:#000;
+                        padding-left: 25px;
+                        font-family: "Quicksand", sans-serif;
+                        font-optical-sizing: initial;
                         font-style: normal;
-                        color: #ffffff;
-                        background-color: #343134;
+                    }
+                    .nome input{
+                        width: 80%;
+                        padding-left: 10px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        background-color: transparent;
+                        border-radius: 5px;
+                        border:1px solid black;
+                        color:#ffffffd3;
                     }
 
-            #text{
-                width: 100%;
-                height: 100%;
-            }
+                    .sobrenome{
+                        width: 50%;
+                    }
+                    .sobrenome label{
+                        color:#000;
+                        padding-left: 25px;
+                        font-family: "Quicksand", sans-serif;
+                        font-optical-sizing: initial;
+                        font-style: normal;
+                    }
+                    .sobrenome input{
+                        width: 80%;
+                        padding-left: 10px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        background-color: transparent;
+                        border-radius: 5px;
+                        border: 1px solid black;
+                        color:#ffffffd3;
+                    }
 
-            #positionText{
-                width: 100%;
-                height: 100%;
-            }
-
-            #bloco{
-                width: 90%;
-                height: 100%;
-                background: #c1c1c1;
-                border-radius: 38px;
-                box-shadow: 10px 15px 20px #ffffff50;
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                padding-bottom: 10%;
-                opacity: 0;
-                animation: texto 1s forwards;
-                animation-delay: .7s;
-            }
-
-            @keyframes texto{
-                from{
-                    opacity: 0;
-                    transform: translateY(-100px);
+                .email{
+                    width: 100%;
                 }
-                to{
-                    opacity: 1;
-                    transform: translateY(0);
+                .email label{
+                    color:#000;
+                    padding-left: 25px;
+                    font-family: "Quicksand", sans-serif;
+                    font-optical-sizing: initial;
+                    font-style: normal;
                 }
-            }
+                .email input{
+                    width: 90%;
+                    padding-left: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    background-color: transparent;
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    color:#ffffffd3;
+                }
 
-            #titulo{
-                height: 20%;
-                color: #343134;
-                font-family: "bebas neue", sans-serif;
-                text-align: center;
-            }
-
-            #paragrafo{
-                width: 100%;
-                height: 70%;
-                color: #fff;
-                font-family: "Poppins", serif;
-                font-weight: 400;
-                font-style: normal;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            #paragrafo p{
-                width: 70%;
-                text-align: center;
-            }
-
-            #assinatura{
-                width: 100%;
-                height: 10%;
-                position: relative;
-            }
-
-            #assinatura p{
-                position: absolute;
-                right: 5%;
-            }    
-}
+                .mensagem{
+                    min-width: 100%;
+                    padding-left: 25px;
+                }
+                .mensagem label{
+                    color:#000;
+                    font-family: "Quicksand", sans-serif;
+                    font-optical-sizing: initial;
+                    font-style: normal;
+                }
+                .mensagem textarea{
+                    min-width: 95%;
+                    padding-left: 10px;
+                    padding-top: 5px;
+                    background-color: transparent;
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    color:#ffffffd3;
+                }
