@@ -55,9 +55,12 @@ header{
     #home a{
         text-decoration: none;
         color: #ffffff;
-        font-family: "Poppins", serif;
-        font-weight: 100;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
         font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
         padding: 7px 13px 7px 13px;
         background-color: #ffffff00;
         border: 1px solid #ffffff00;
@@ -93,20 +96,40 @@ main{
             justify-content: space-around;
             align-items: center;
         }
+            .showMidia{
+                animation: show_midia 1s forwards;
+            }
+            @keyframes show_midia {
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                }
+            }
+
             #whatsapp{
                 width: 9%;
                 height: 10vh;
                 padding-top: 5px;
+                animation-delay: .5s;
+                opacity: 0;   
             }
+
+            
             #instagram{
                 width: 9%;
                 height: 10vh;
                 padding-top: 5px;
+                animation-delay: 1s;
+                opacity: 0;   
             }
             #email{
                 width: 9%;
                 height: 10vh;
                 padding-top: 5px;
+                animation-delay: 1.5s;
+                opacity: 0;                
             }
         .form{
             min-width: 100%;
@@ -115,9 +138,12 @@ main{
             border-radius: 15px;
             box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.863);
             background-color: rgba(128, 128, 128, 0.459);
+            animation-delay: 2s;
+            opacity: 0;
         }
             form{
                 width: 100%;
+                height: 65vh;
                 display: grid;
                 padding-top: 10px;
             }
@@ -130,9 +156,12 @@ main{
                     .nome label{
                         color:#000;
                         padding-left: 25px;
-                        font-family: "Quicksand", sans-serif;
-                        font-optical-sizing: initial;
+                        font-family: "Roboto", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 300;
                         font-style: normal;
+                        font-variation-settings:
+                            "wdth" 100;
                     }
                     .nome input{
                         width: 80%;
@@ -144,6 +173,9 @@ main{
                         border:1px solid black;
                         color:#ffffffd3;
                     }
+                    .nome input:focus{
+                        background-color: #8080807e;
+                    }
 
                     .sobrenome{
                         width: 50%;
@@ -151,9 +183,12 @@ main{
                     .sobrenome label{
                         color:#000;
                         padding-left: 25px;
-                        font-family: "Quicksand", sans-serif;
-                        font-optical-sizing: initial;
+                        font-family: "Roboto", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 300;
                         font-style: normal;
+                        font-variation-settings:
+                            "wdth" 100;
                     }
                     .sobrenome input{
                         width: 80%;
@@ -165,6 +200,9 @@ main{
                         border: 1px solid black;
                         color:#ffffffd3;
                     }
+                    .sobrenome input:focus{
+                        background-color: #8080807e;
+                    }
 
                 .email{
                     width: 100%;
@@ -172,9 +210,12 @@ main{
                 .email label{
                     color:#000;
                     padding-left: 25px;
-                    font-family: "Quicksand", sans-serif;
-                    font-optical-sizing: initial;
+                    font-family: "Roboto", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
                     font-style: normal;
+                    font-variation-settings:
+                        "wdth" 100;
                 }
                 .email input{
                     width: 90%;
@@ -186,16 +227,22 @@ main{
                     border: 1px solid black;
                     color:#ffffffd3;
                 }
+                .email input:focus{
+                    background-color: #8080807e;
+                }
 
                 .mensagem{
                     min-width: 100%;
-                    padding-left: 25px;
+                    padding-left: 2rem;
                 }
                 .mensagem label{
                     color:#000;
-                    font-family: "Quicksand", sans-serif;
-                    font-optical-sizing: initial;
+                    font-family: "Roboto", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
                     font-style: normal;
+                    font-variation-settings:
+                        "wdth" 100;
                 }
                 .mensagem textarea{
                     min-width: 95%;
@@ -205,4 +252,7 @@ main{
                     border-radius: 5px;
                     border: 1px solid black;
                     color:#ffffffd3;
+                }
+                .mensagem textarea:focus{
+                    background-color: #8080807e;
                 }

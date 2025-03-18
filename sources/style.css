@@ -135,8 +135,13 @@ body{
     color: #ffffff;
     text-decoration: none;
     border-radius: 10px;
-    font-size: medium;
     padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     transition: all 700ms;
 }
 
@@ -150,8 +155,13 @@ body{
     color: #d3bca7;
     text-decoration: none;
     border-radius: 10px;
-    font-size: medium;
     padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     transition: all 700ms;
 }
 
